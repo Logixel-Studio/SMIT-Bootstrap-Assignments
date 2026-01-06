@@ -1,0 +1,77 @@
+.nav-custom-bg {
+    background-color: #26082A;
+}
+
+.first-row-custom-textColor {
+    color: #A65EB8;
+}
+
+.first-row-custom-HeadingSize {
+    font-size: 48px;
+}
+
+.from {
+    background-color: #26082A;
+    color: white;
+}
+
+.submitButton-customColor {
+    background-color: #A65EB8;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#firstRadio {
+    scroll-margin-top: 130px;
+}
+
+#secondRadio {
+    scroll-margin-top: 130px;
+}
+
+#thirdRadio {
+    scroll-margin-top: 130px;
+}
+
+#forthRadio {
+    scroll-margin-top: 130px;
+}
+
+#fifthRadio {
+    scroll-margin-top: 130px;
+}
+
+#sixthRadio {
+    scroll-margin-top: 130px;
+}
+
+#ninthRadio {
+    scroll-margin-top: 130px;
+}
+
+#seventhRadio {
+    scroll-margin-top: 130px;
+}
+
+#eighthRadio {
+    scroll-margin-top: 130px;
+}
+
+#tenthhRadio {
+    scroll-margin-top: 130px;
+}
+
+.toggelButtons-possition,
+.right-sideCoustom {
+    position: sticky;
+    top: 160px;
+}
+
+footer {
+    background-color: aqua;
+    height: 220px;
+}
