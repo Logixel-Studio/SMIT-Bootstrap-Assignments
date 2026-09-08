@@ -1,0 +1,74 @@
+.stage-panel {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 18vh clamp(20px, 4vw, 64px) clamp(24px, 6vh, 64px);
+  z-index: 3;
+  pointer-events: none;
+  background: linear-gradient(0deg, rgba(8, 10, 15, 0.82) 0%, rgba(8, 10, 15, 0.55) 42%, transparent 100%);
+}
+
+.stage-panel > * {
+  max-width: 420px;
+}
+
+.stage-progress {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 18px;
+}
+
+.seg {
+  width: 20px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--border-strong);
+  transition: background 0.4s ease;
+}
+
+.seg-done {
+  background: var(--accent);
+}
+
+.stage-copy {
+  animation: stage-in 0.55s var(--ease-out);
+}
+
+@keyframes stage-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stage-eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.stage-title {
+  font-size: clamp(24px, 2.6vw, 34px);
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.stage-body {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text-dim);
+  max-width: 38ch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stage-copy {
+    animation: none;
+  }
+}

@@ -1,0 +1,34 @@
+.footer {
+  padding: 56px clamp(20px, 6vw, 80px) 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-brand {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--text);
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: var(--text-dim);
+  max-width: 40ch;
+}
+
+.footer-mail {
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.footer-legal {
+  font-size: 11.5px;
+  color: var(--text-faint);
+  margin-top: 18px;
+}

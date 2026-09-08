@@ -1,0 +1,9 @@
+.mstory {
+  position: relative;
+}
+
+@media (min-width: 900px) {
+  .mstory {
+    display: none;
+  }
+}

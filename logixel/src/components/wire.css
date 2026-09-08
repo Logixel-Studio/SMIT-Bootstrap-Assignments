@@ -1,0 +1,42 @@
+.wire {
+  transition: opacity 0.5s ease;
+}
+
+.wire-base {
+  stroke: rgba(233, 238, 250, 0.22);
+  stroke-width: 1.5;
+}
+
+.wire-flowing .wire-base {
+  stroke: #4b6db8;
+  stroke-width: 1.7;
+}
+
+.wire-label {
+  fill: var(--text-faint);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.wire-packet {
+  stroke: var(--accent);
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-dasharray: 0.05 1;
+  filter: drop-shadow(0 0 3px rgba(62, 123, 250, 0.85));
+  animation: wire-flow 2.2s linear infinite;
+}
+
+@keyframes wire-flow {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: -0.1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wire-packet {
+    animation: none;
+    opacity: 0;
+  }
+}

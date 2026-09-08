@@ -1,0 +1,80 @@
+.mscene {
+  padding: 48px 20px;
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+  border-bottom: 1px solid var(--border);
+}
+
+.mscene:last-child {
+  border-bottom: none;
+}
+
+.mscene-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mscene-copy {
+  max-width: 480px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.mscene-title {
+  font-size: 22px;
+  color: var(--text);
+  margin: 10px 0 10px;
+}
+
+.mscene-body {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+
+.mscene-diagram {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  padding: 4px 0;
+}
+
+.mscene-wires {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.mscene-row {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.mscene-node {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.mscene-note {
+  max-width: 440px;
+  margin: 28px auto 0;
+  text-align: center;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--text-faint);
+}
+
+@media (min-width: 640px) {
+  .mscene {
+    padding: 64px 24px;
+  }
+}

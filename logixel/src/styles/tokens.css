@@ -1,0 +1,38 @@
+:root {
+  color-scheme: dark;
+
+  /* Foundation */
+  --bg: #0a0c11;
+  --bg-raised: #10131a;
+  --surface: #12151d;
+  --surface-2: #171b24;
+  --border: rgba(233, 238, 250, 0.09);
+  --border-strong: rgba(233, 238, 250, 0.16);
+
+  /* Text */
+  --text: #e9edf6;
+  --text-dim: #a4acc0;
+  --text-faint: #666f87;
+
+  /* Brand accent — used sparingly and deliberately */
+  --accent: #3e7bfa;
+  --accent-soft: #274a94;
+  --accent-dim: rgba(62, 123, 250, 0.14);
+  --accent-line: rgba(62, 123, 250, 0.35);
+
+  /* Status */
+  --ok: #34c98f;
+  --warn: #e0a736;
+
+  /* Type */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Rhythm */
+  --container: 1200px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
